@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RDN El Salvador — Resumen Diario de Noticias</title>
+<meta name="description" content="Resumen diario en PDF con las noticias más relevantes de El Salvador, organizado por categoría y entregado por correo cada mañana.">
+<style>
+  :root {
+    --accent: #14304d;
+    --accent-light: #1f4a75;
+    --bg: #f7f8fa;
+    --surface: #ffffff;
+    --text: #1a1f27;
+    --text-muted: #5a6472;
+    --border: #e3e6ea;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--accent);
+    color: #ffffff;
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    color: #9fb6cf;
+    margin: 0 0 0.75rem;
+    font-weight: 600;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  header p.lead {
+    margin: 0;
+    color: #d4e0ec;
+    font-size: 1.05rem;
+    max-width: 60ch;
+  }
+
+  main {
+    max-width: 760px;
+    margin: -2rem auto 0;
+    padding: 0 1.5rem 3rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(20, 48, 77, 0.06);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+    color: var(--accent);
+  }
+
+  p {
+    margin: 0 0 1rem;
+    color: var(--text);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+  }
+
+  .steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .steps li:last-child {
+    margin-bottom: 0;
+  }
+
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.9rem;
+    height: 1.9rem;
+    background: var(--accent-light);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .steps strong {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--text);
+  }
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    background: #eef2f7;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .contact-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --surface: #171a21;
+      --text: #e7eaee;
+      --text-muted: #9aa4b2;
+      --border: #262b34;
+    }
+    .tag {
+      background: #1c2733;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <p class="eyebrow">Servicio informativo</p>
+    <h1>RDN El Salvador — Resumen Diario de Noticias</h1>
+    <p class="lead">
+      Un resumen diario en PDF con las noticias más relevantes de El Salvador,
+      entregado por correo electrónico cada mañana.
+    </p>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>Qué es</h2>
+    <p>
+      RDN El Salvador es un resumen diario en formato PDF que reúne las noticias
+      más relevantes del país, organizadas por categoría para facilitar su lectura.
+    </p>
+    <div class="categories">
+      <span class="tag">Política</span>
+      <span class="tag">Economía</span>
+      <span class="tag">Sociedad</span>
+      <span class="tag">Otras categorías de interés</span>
+    </div>
+    <p style="margin-top: 1rem;">
+      Cada edición se envía por correo electrónico a una lista de destinatarios
+      definida, todas las mañanas.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Cómo funciona</h2>
+    <ol class="steps">
+      <li>
+        <strong>Generación diaria</strong>
+        Cada edición del resumen se genera automáticamente a partir de las noticias del día.
+      </li>
+      <li>
+        <strong>Revisión manual</strong>
+        Antes de cualquier envío, el contenido pasa por una revisión humana. No se envía
+        nada sin aprobación previa.
+      </li>
+      <li>
+        <strong>Entrega por correo</strong>
+        Una vez aprobado, el resumen en PDF se envía por correo electrónico a la
+        lista de destinatarios definida.
+      </li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Contacto</h2>
+    <p>Para consultas sobre este servicio, puede escribir a:</p>
+    <p class="contact-value">juanjluarca@gmail.com</p>
+  </section>
+
+</main>
+
+<footer>
+  RDN El Salvador — Resumen Diario de Noticias
+</footer>
+
+</body>
+</html>
